@@ -1,0 +1,76 @@
+$primary-color: #fa8405;
+$secondary-color: #00b33c;
+$secondary-color-dark: #009933;
+$fb-btn-blue: #3b5998;
+$fb-btn-hover: #324b81;
+$google-btn-red: #DB4437;
+$google-btn-hover: #c23124;
+
+.app-header {
+  display: flex;
+  background-color: $primary-color;
+  .top-menu {
+  background-color: $primary-color;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.logo h1 {
+  color: white;
+  padding-top: 8px;
+  padding-right: 50px;
+}
+
+.content-layout {
+  padding: 100px;
+  background-color: white;
+}
+
+.submit-button {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+
+  &:hover {
+    background-color: $secondary-color-dark;
+    border-color: $secondary-color-dark;
+  }
+}
+
+.btn {
+  width: 100%;
+  color: white;
+}
+
+.facebook-btn {
+  background-color: $fb-btn-blue;
+  border-color: $fb-btn-blue;
+  &:hover {
+    background-color: $fb-btn-hover;
+    border-color: $fb-btn-hover;
+    color: white;
+  }
+}
+
+.google-btn {
+  background-color: $google-btn-red;
+  border-color: $google-btn-red;
+
+  &:hover {
+    color: white;
+    background-color: $google-btn-hover;
+    border-color: $google-btn-hover;
+  }
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.footer-info {
+  text-align: center;
+}

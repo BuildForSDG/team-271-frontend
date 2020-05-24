@@ -1,34 +1,44 @@
-import React from 'react';
-import Login from './components/login';
-import { Layout, Typography } from 'antd';
-import { orange, green } from '@ant-design/colors';
+import React, { Component } from 'react';
+import { Layout, Menu, Typography } from 'antd';
+import Login from './pages/login';
+import SignUp from './pages/signup';
+import Contact from './pages/contact';
+import './app.scss';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 const { Header, Footer, Content } = Layout;
-const { Title } = Typography;
+const { Title, Paragraph } = Typography;
 
-function App() {
-  return (
+export default function App() {
+    return (
+      <Router>    
+        <Layout>
+        <Header className="app-header">
+          <div className="logo"><Title>WONYA</Title></div>
+          <Menu className="top-menu" mode="horizontal" defaultSelectedKeys={['2']}>
+            <Menu.Item key="1"><Link to={'/'} className="nav-link"> Home </Link></Menu.Item>
+            <Menu.Item key="2"><Link to={'/login'} className="nav-link">Login</Link></Menu.Item>
+            <Menu.Item key="3"><Link to={'/signup'} className="nav-link">SignUp</Link></Menu.Item>
+            <Menu.Item key="4"><Link to={'/contact'} className="nav-link">Contact</Link></Menu.Item>
+          </Menu>
+        </Header>
 
-    <Layout>
-      <Header style={{backgroundColor: orange.primary}}>
-      <Title level={2} className="logo">WONYA</Title>
-      </Header>
-      <Content>
-        <Login />
-      </Content>
-      <Footer>Wonya @2020</Footer>
+        <Layout className="content-layout">
+          <Switch>
+              <Route path='/login' component={Login} />
+              <Route path='/signup' component={SignUp} />
+              <Route path='/contact' component={Contact} />
+          </Switch>
+        </Layout>   
 
-      <style global jsx>
-        {
-          `
-            .ant-layout-header h2 {
-              color: white;
-              padding-top: 8px;
-            }
-          `
-        }
-      </style>
-    </Layout>
-  );
+        <Footer>
+          <Paragraph className="footer-info">  Wonya @2020  </Paragraph>
+        </Footer>
+      </Layout>
+    </Router>
+    );
 }
-
-export default App;
