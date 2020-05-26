@@ -8,9 +8,26 @@ $google-btn-hover: #c23124;
 
 .app-header {
   display: flex;
+  justify-content: space-between;
   background-color: $primary-color;
   .top-menu {
-  background-color: $primary-color;
+    background-color: $primary-color;
+    li {
+      &:hover {
+        border-bottom: 2px solid $secondary-color-dark;
+      }
+      a {
+        color: white;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+
+    .ant-menu-item-selected {
+      border-bottom: 2px solid $secondary-color-dark;
+      font-weight: 800;
+    }
   }
 }
 

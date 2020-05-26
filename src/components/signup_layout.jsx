@@ -48,7 +48,7 @@ export default function SignupLayout() {
           <Checkbox>Remember me</Checkbox>
         </Form.Item>
 
-        <a className="sigup-form-forgot" href="">
+        <a className="sigup-form-forgot" href="#">
           Forgot password
         </a>
         </Form.Item>
