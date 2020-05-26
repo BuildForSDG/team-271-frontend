@@ -111,6 +111,10 @@ $google-btn-hover: #c23124;
 .facebook-btn {
   background-color: $fb-btn-blue;
   border-color: $fb-btn-blue;
+
+  svg {
+    margin-bottom: 8px;
+  }
   &:hover {
     background-color: $fb-btn-hover;
     border-color: $fb-btn-hover;
@@ -121,6 +125,10 @@ $google-btn-hover: #c23124;
 .google-btn {
   background-color: $google-btn-red;
   border-color: $google-btn-red;
+
+  svg {
+    margin-bottom: 8px;
+  }
 
   &:hover {
     color: white;
