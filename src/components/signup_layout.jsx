@@ -2,20 +2,19 @@ import React from 'react';
 import { Layout, Form, Input, Checkbox, Button, Row, Col, Typography, Divider, Select } from "antd";
 import 'antd/dist/antd.css';
 // import '../index.scss';
-import { FacebookFilled, GoogleOutlined, UserOutlined, LockOutlined, MailOutlined } from '@ant-design/icons';
+import { 
+  FacebookFilled, 
+  GoogleOutlined,
+  UserOutlined,
+  LockOutlined,
+  MailOutlined,
+  PhoneOutlined
+} from '@ant-design/icons';
 const { Content } = Layout;
 const { Title } = Typography;
 const { Option } = Select;
 
 export default function SignupLayout() {
-
-  const prefixSelector = (
-    <Form.Item name="prefix" noStyle>
-      <Select style={{ width: 100 }}>
-        <Option value="+256">+256</Option>
-      </Select>
-    </Form.Item>
-  );
 
   return (
     <Content className="sigup-content">
@@ -75,27 +74,17 @@ export default function SignupLayout() {
         </Form.Item>
 
         <Form.Item
-        name="phone"
-        rules={[
-          {type: 'email', message: 'The input is not valid E-mail!',},
-          {required: true, message: 'Please input your E-mail!',},
-        ]}
-        >
-          <Input prefix={<MailOutlined className="mail-item-icon" />} placeholder="Email" />
-        </Form.Item>
-
-        <Form.Item
-        name="phone"
-        rules={[{ required: true, message: 'Please input your phone number!' }]}
-      >
-        <Input addonBefore={prefixSelector} style={{ width: '100%' }} placeholder="Phone number"/>
-      </Form.Item>
-
-        <Form.Item
           name="password"
           rules={[{ required: true, message: 'Please input your password!' }]}
         >
           <Input.Password prefix={<LockOutlined className="site-form-item-icon" />} placeholder="Password" />
+        </Form.Item>
+
+        <Form.Item
+          name="password"
+          rules={[{ required: true, message: 'Confirm your password!' }]}
+        >
+          <Input.Password prefix={<LockOutlined className="site-form-item-icon" />} placeholder="Confirm your password" />
         </Form.Item>
 
         <Form.Item >

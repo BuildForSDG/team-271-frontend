@@ -14,7 +14,7 @@ export default function LoginLayout() {
   return (
         <Content className="login-content" >
           <Row justify="center">
-            <Col xs={24} sm={22} md={10} lg={8} xl={8} >
+            <Col md={10} lg={8} xl={8} >
               <Title level={2}>SIGN IN</Title>
               <Row justify="center" gutter={[8, 24]}>
                 <Col xs={22} sm={22} md={12} lg={12} xl={12}>
