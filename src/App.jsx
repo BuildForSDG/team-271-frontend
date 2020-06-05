@@ -1,11 +1,18 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TopBar from './containers/topbar/topBar';
+import Main from './containers/main/main';
+import Footer from './containers/footer/footer';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-      <h1>Wonya App</h1>
-    </div>
+    <React.Fragment>
+        <TopBar/>
+        <Main/>
+        <Footer/>
+    </React.Fragment>
   );
 }
 
