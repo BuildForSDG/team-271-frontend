@@ -1,0 +1,9 @@
+.footer{
+    background-color: orange;
+    height: 70px;
+    text-align: center;
+}
+.footer>p{
+    color: white;
+    padding-top:10px ;
+}
