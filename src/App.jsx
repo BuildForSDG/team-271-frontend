@@ -1,8 +1,6 @@
 import React from 'react';
 import TopBar from './containers/topbar/topBar';
 import Main from './containers/main/main';
-import {Navbar, NavDropdown, Nav, Button} from 'react-bootstrap';
-import Footer from './containers/footer/footer';
 
 function App() {
   return (
