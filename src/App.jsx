@@ -1,24 +1,25 @@
-import React from 'react';
-import TopBar from './containers/topbar/topBar';
-import Main from './containers/main/main';
-import Footer from './containers/footer/footer';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-
+import React from "react";
+import TopBar from "./components/topbar/topBar";
+// import Main from "./components/main/main";
+import Footer from "./components/footer/footer";
+import Routes from "./components/Routes";
+import LoginForm from "./components/LoginForm";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { LinkContainer } from "react-router-bootstrap";
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <div className="App">
-          <header className="App-header">
-            <TopBar/>
-          </header>
-            <Route path="/" exact component={Main}/>
-            <Footer/>
+    <React.Fragment>
+      <div className="App constainer">
+        <header className="App-header">
+          <TopBar />
+        </header>
+        <div>
+          <Routes />
         </div>
-      </Switch>
-    </Router>
-    
+        <Footer />
+      </div>
+    </React.Fragment>
   );
 }
 

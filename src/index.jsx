@@ -6,9 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div ref={React.createRef()}>
     <App />
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
 

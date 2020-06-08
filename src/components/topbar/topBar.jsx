@@ -12,7 +12,7 @@ function TopBar(){
     return(
         <React.Fragment>
             <Navbar expand="lg" id='navigation'>
-            <Navbar.Brand href="#home" id='brand'><h2>WONYA</h2></Navbar.Brand>
+            <Navbar.Brand href="home" id='brand'><h2>WONYA</h2></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="nav ml-auto">

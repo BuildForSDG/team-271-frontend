@@ -6,7 +6,7 @@ import {Container} from 'react-bootstrap';
 
 function Main(){
     return(
-        <Container fluid className="con">
+        <Container fluid className="con container-fluid">
             <h2>WONYA APP</h2>
         </Container>
     );
