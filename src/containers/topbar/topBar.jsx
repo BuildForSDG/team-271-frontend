@@ -35,7 +35,7 @@ function TopBar(){
                 <Button variant="secondary" onClick={handleClose}>
                   Cancel
                 </Button>
-                <Button variant="primary" onClick={handleClose}>
+                <Button variant="primary">
                   Confirm
                 </Button>
             </Modal.Footer>

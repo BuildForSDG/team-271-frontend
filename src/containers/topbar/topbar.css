@@ -12,4 +12,8 @@
 }
 #nav_link{
     color:white
+
+}
+#nav_link:hover{
+    color: black;
 }
