@@ -1,10 +1,18 @@
 import React from 'react';
+import SearchCase,{ReportedCase} from './cases/reported_case'
+import Nav from './nav'
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
-      <h1>Wonya App</h1>
+      <Nav/>
+      <hr/>
+      <div className='container'>
+      <SearchCase/>
+      <hr/>
+      <ReportedCase/>
+    </div>
     </div>
   );
 }
