@@ -1,0 +1,19 @@
+#navigation{
+    background-color: orange;
+}
+#basic-navbar-nav{
+    margin-right: 50px;
+}
+#brand{
+    color: white;
+}
+#basic-nav-dropdown{
+    color: white;
+}
+#nav_link{
+    color:white
+
+}
+#nav_link:hover{
+    color: black;
+}
