@@ -1,6 +1,5 @@
 .con{
     /* Remove height constraint for dynamic height */
-    background-color:gainsboro;
-    height:700px;
+    min-height:480px;
     text-align: center;
 }
