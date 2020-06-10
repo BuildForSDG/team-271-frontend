@@ -3,6 +3,9 @@ import TopBar from './containers/topbar/topBar';
 import Main from './containers/main/main';
 import Footer from './containers/footer/footer';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import ReportedCaseSearch from './cases/reported_case'
+import {ReportedCase} from './cases/reported_case'
+
 
 
 function App() {
@@ -14,6 +17,13 @@ function App() {
             <TopBar/>
           </header>
             <Route path="/" exact component={Main}/>
+            <hr/>
+            <div className='container'>
+            <ReportedCaseSearch/>
+            <hr/>
+            <ReportedCase/>
+            <hr/>
+            </div>
             <Footer/>
         </div>
       </Switch>
