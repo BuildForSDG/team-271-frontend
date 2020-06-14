@@ -4,6 +4,7 @@ import Main from './containers/main/main';
 import './app.css'
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import Incident from './containers/main/incident';
 import Footer from './containers/footer/footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -21,6 +22,7 @@ function App() {
             <Route exact path="/home" component={Main} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
+            <Route path="/incident" component={Incident}/> 
           </Switch>
         </div>
         <footer className='fixed-bottom'>

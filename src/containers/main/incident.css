@@ -1,0 +1,21 @@
+.inci{
+	height:500px;
+}
+
+.card{
+	margin-top: 100px;
+	
+}
+#heading{
+	text-align: center;
+}
+.errors{
+	color: red;
+	text-align: center;
+	font-style: italic;
+}
+#ex{
+	font-style: italic;
+	font-size: 15px;
+	color: gray;
+}
