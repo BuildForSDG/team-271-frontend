@@ -33,14 +33,17 @@ function TopBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="nav ml-auto">
+            <Nav.Link id="nav_link" as={Link} to="/home">
+              Home
+            </Nav.Link>
+            <Nav.Link id="nav_link" as={Link} to="/incident">
+              Report Incident
+            </Nav.Link>
             <Nav.Link hidden={hide} id="nav_link" as={Link} to="/login">
               Login
             </Nav.Link>
             <Nav.Link id="nav_link" hidden={hide} as={Link} to="/register">
               Signup
-            </Nav.Link>
-            <Nav.Link id="nav_link" as={Link} to="/home">
-              Home
             </Nav.Link>
             <NavDropdown alignRight title={<FontAwesomeIcon icon={faUserCircle} size="2x" />} id="basic-nav-dropdown">
               <NavDropdown.Item onClick={handleShow}>Logout</NavDropdown.Item>

@@ -33,7 +33,6 @@ const Login = () => {
   if (isLoggedIn) {
     localStorage.setItem('loginStatus', true);
     history.push('/home')
-    // return <Redirect to="/home" />;
   }
   if (isError) {
     return <Redirect to="/" />;
